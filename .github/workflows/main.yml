@@ -16,5 +16,5 @@ jobs:
       env:
         CHATWORK_TOKEN: ${{ secrets.CHATWORK_TOKEN }}
         CHATWORK_ROOM_ID: ${{ secrets.CHATWORK_ROOM_ID }}
-        CHATWORK_MESSAGE_BODY: "Hello chatwork!"
+        CHATWORK_MESSAGE_BODY: "(y) デプロイされました🚀"
         CHATWORK_SELF_UNREAD: 0
