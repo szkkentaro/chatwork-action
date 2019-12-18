@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Send a message to Chatwork
-      uses: szkkentaro/action-chatwork@master
+      uses: szkkentaro/chatwork-action@master
       env:
         CHATWORK_TOKEN: ${{ secrets.CHATWORK_TOKEN }}
         CHATWORK_ROOM_ID: ${{ secrets.CHATROWK_ROOM_ID }}
