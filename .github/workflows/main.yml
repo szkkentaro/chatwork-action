@@ -1,0 +1,20 @@
+name: Chatwork notification on push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send a message to Chatwork
+      uses: szkkentaro/action-chatwork@master
+      env:
+        CHATWORK_TOKEN: ${{ secrets.CHATWORK_TOKEN }}
+        CHATWORK_ROOM_ID: ${{ secrets.CHATROWK_ROOM_ID }}
+        CHATWORK_MESSAGE_BODY: "Hello chatwork!"
+        CHATWORK_SELF_UNREAD: 0
