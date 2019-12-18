@@ -1,4 +1,4 @@
-FROM golang:1.13-alpine
+FROM golang:1.13
 
 RUN go get github.com/szkkentaro/chatwork-action/cmd/chatwork
 
